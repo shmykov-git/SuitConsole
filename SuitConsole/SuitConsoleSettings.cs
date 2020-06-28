@@ -5,11 +5,11 @@ using SuitConsole.Tools;
 
 namespace SuitConsole
 {
-	class Settings : IMyToolSettings
+	class SuitConsoleSettings : IMyToolSettings
     {
         private JObject settings;
 
-        public Settings()
+        public SuitConsoleSettings()
         {
             settings = File.ReadAllText("settings.json").FromJson<JObject>();
         }

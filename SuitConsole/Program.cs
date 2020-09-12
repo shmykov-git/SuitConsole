@@ -18,7 +18,7 @@ namespace SuitConsole
 
             log.Debug("### Start console ###");
 
-            IoC.Get<MyTool>().Start();
+            IoC.Get<MyTool>().Start("Hello Suit");
 
             Console.ReadLine();
 
